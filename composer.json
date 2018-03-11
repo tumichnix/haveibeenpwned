@@ -1,0 +1,39 @@
+{
+  "name": "tumichnix/haveibeenpwned",
+  "type": "library",
+  "description": "A PHP library for the \"have i been pwned?\" API",
+  "license": "MIT",
+  "keywords": ["php", "api", "pwned"],
+  "homepage": "https://github.com/tumichnix/haveibeenpwned",
+  "authors": [
+    {
+      "name": "tumichnix",
+      "email": "tumichnix@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7",
+    "vlucas/phpdotenv": "^2.4",
+    "sebastian/phpcpd": "*",
+    "phploc/phploc": "~3.0",
+    "squizlabs/php_codesniffer": "^2.9",
+    "phpmd/phpmd" : "@stable",
+    "pdepend/pdepend" : "@stable",
+    "symfony/var-dumper": "^3.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tumichnix\\HaveIBeenPwned\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tumichnix\\Tests\\": "tests/"
+    }
+  }
+}
